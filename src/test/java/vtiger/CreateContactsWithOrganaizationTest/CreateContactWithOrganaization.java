@@ -36,6 +36,7 @@ public class CreateContactWithOrganaization extends BaseClass {
 
     @Test
     public void CreateContactWithOrganaization() throws Exception
+    
 	{
     	
     //navigating to Organaization link
