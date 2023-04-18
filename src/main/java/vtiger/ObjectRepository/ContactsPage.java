@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ContactsPage {
 	
-	@FindBy(xpath="//img[@title='Create Contact...']") private WebElement CreataContacts;
+	@FindBy(xpath="//img[@alt='Create Contact...']") private WebElement CreataContacts;
 	
 	public ContactsPage(WebDriver driver)
 	{

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-Runner-1(failed)">
     <classes>
-      <class name="vtiger.CreateOrgWithMultipleTest.CreateOrgMultipleTest">
+      <class name="vtiger.ContactsTest.CreateContactsTest">
         <methods>
           <include name="bcConfig"/>
           <include name="amConfig"/>
@@ -11,9 +11,24 @@
           <include name="bmConfig"/>
           <include name="asConfig"/>
           <include name="acConfig"/>
-          <include name="createOrgMultipleTest" invocation-numbers="2"/>
+          <include name="createContactsTest"/>
         </methods>
-      </class> <!-- vtiger.CreateOrgWithMultipleTest.CreateOrgMultipleTest -->
+      </class> <!-- vtiger.ContactsTest.CreateContactsTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test-Runner-1(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-Runner-2(failed)">
+    <classes>
+      <class name="vtiger.OrganaizationTest.CreateOrganaizationTest">
+        <methods>
+          <include name="bcConfig"/>
+          <include name="amConfig"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="asConfig"/>
+          <include name="CreateOrganaizationTest"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- vtiger.OrganaizationTest.CreateOrganaizationTest -->
+    </classes>
+  </test> <!-- Test-Runner-2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
